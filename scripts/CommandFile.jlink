@@ -1,0 +1,14 @@
+BOOTLOADER_ADDR=0x08000000
+APP_ADDR=0x08004000
+IMS_ADDR=0x08004000
+
+r
+h
+exec device = STM32L151CB
+loadbin ./Debug/Bootloader.bin 0x08000000
+verifybin ./Debug/Bootloader.bin 0x08000000
+loadbin /home/anton/Source/IMS/Debug/IMS.bin 0x08004000
+verifybin /home/anton/Source/IMS/Debug/IMS.bin 0x08004000
+r
+g
+q
