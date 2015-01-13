@@ -3,8 +3,6 @@
  *
  *	\brief USART management
  *
- *	\page License
- *
  *  Created on: 09.06.2011
  *      Author: Anton Glukhov
  */
